@@ -1,0 +1,34 @@
+list.append(x)
+Listenin sonuna bir item ekler. a[len(a):] = [x] eşdeğerdir.
+
+list.extend(iterable)
+Extend the list by appending all the items from the iterable. Equivalent to a[len(a):] = iterable.
+
+list.insert(i, x)
+Verilen pozisyona item ekler. İlk argüman önce eklenecek olan elemanın indexi, yani a.insert(0, x) listenin önüne ekler, ve a.insert(len(a), x), a.append(x) 'a eşdeğerdir.
+
+list.remove(x)
+Listedeki ilk x değerini kaldırın. Böyle bir item yoksa error olur.
+
+list.pop([i])
+Listenin üzerinde verilen pozisyonun itemini siler, ve onu döndürür. Index belirtilmemişse, a.pop() kaldırır ve listedeki son öğeyi döndürür. 
+
+list.clear()
+Listedeki bütün itemleri siler. del a[:] 'e eşdeğerdir.
+
+list.index(x[, start[, end]])
+Return zero-based index in the list of the first item whose value is x. Böyle bir öğe yoksa ValueError yükseltir.
+
+The optional arguments start and end are interpreted as in the slice notation and are used to limit the search to a particular subsequence of the list. The returned index is computed relative to the beginning of the full sequence rather than the start argument.
+
+list.count(x)
+Return the number of times x appears in the list.
+
+list.sort(key=None, reverse=False)
+Sort the items of the list in place (the arguments can be used for sort customization, see sorted() for their explanation).
+
+list.reverse()
+Reverse the elements of the list in place.
+
+list.copy()
+Return a shallow copy of the list. Equivalent to a[:].
